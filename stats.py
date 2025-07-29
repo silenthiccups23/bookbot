@@ -4,10 +4,10 @@ def text_count (book):
 
 def number_of_characters(text):
     dict = {}
-     
-    for word in text.lower():
+    words = text.lower()
+    for word in words:
         if word in dict:
             dict[word] += 1
         else:
             dict[word] = 1
-    return dict
+    return dict 
