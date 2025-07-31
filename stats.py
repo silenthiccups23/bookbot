@@ -1,3 +1,6 @@
+
+
+
 def text_count (book):
     num_words = len(book.split())
     return f"{num_words} words found in the document"
@@ -10,13 +13,15 @@ def number_of_characters(text):
             dict[word] += 1
         else:
             dict[word] = 1
-    return dict 
+    return dict         
 
-def sort_on(char): 
-    return char['nums']
+def sort_on(char):
+    return char["num"]
 
 def report(charactersDict, totalCount):
     sorted_list = []
     for char in charactersDict: 
         sorted_list.append({"char": char, "num": charactersDict[char]})
-    print(sorted_list)
+    sorted_list.sort(reverse=True, key=sort_on)
+    return sorted_list
+        
