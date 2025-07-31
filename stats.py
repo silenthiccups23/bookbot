@@ -27,12 +27,12 @@ def report(charactersDict):
         sorted_list.sort(reverse=True, key=sort_on)
     return sorted_list
         
-def full_report(list, totalCount):
+def full_report(list, totalCount, pathy):
     report = ""
 
     report += "============ BOOKBOT ============\n"
-    report += "Analyzing book found at books/frankenstein.txt...\n"
-    report += "Analyzing book found at books/frankenstein.txt...\n"
+    report += f"Analyzing book found at {pathy}...\n"
+    report += f"Analyzing book found at {pathy}...\n"
     report += "----------- Word Count ----------\n"
     report += f"Found {totalCount} total words\n"
 
