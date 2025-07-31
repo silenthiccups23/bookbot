@@ -11,3 +11,12 @@ def number_of_characters(text):
         else:
             dict[word] = 1
     return dict 
+
+def sort_on(char): 
+    return char['nums']
+
+def report(charactersDict, totalCount):
+    sorted_list = []
+    for char in charactersDict: 
+        sorted_list.append({"char": char, "num": charactersDict[char]})
+    print(sorted_list)

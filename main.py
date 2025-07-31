@@ -7,7 +7,6 @@ def get_book_text(path):
 def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
-    print(text)
     result = text_count(text)
     print(result)
     number_of_characters_result = number_of_characters(text)
